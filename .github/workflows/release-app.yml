@@ -27,8 +27,8 @@ jobs:
         with:
           token: ${{ github.token }}
           branch: main
-          skipInvalidCommits: true
           fallbackTag: '1.0.0'
+          noVersionBumpBehavior: patch
 
       - name: Bump version in Config.xcconfig
         run: |
