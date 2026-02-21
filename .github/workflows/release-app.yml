@@ -26,7 +26,7 @@ jobs:
         uses: ietf-tools/semver-action@v1
         with:
           token: ${{ github.token }}
-          branch: main}}
+          branch: main
           fallbackTag: '1.0.0'
 
       - name: Bump version in Config.xcconfig
